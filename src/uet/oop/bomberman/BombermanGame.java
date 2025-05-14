@@ -74,8 +74,6 @@ public class BombermanGame extends Application {
     AnimationTimer timer;
     private int cntAddScore = 0;
 
-    // private Stage stage1;
-
     public static void main(String[] args) {
         Application.launch(BombermanGame.class);
     }
@@ -83,7 +81,6 @@ public class BombermanGame extends Application {
     @Override
     public void start(Stage stage) {
         setText();
-        // Khởi tạo điểm số
         point.addList(scoreFile);
         point.topScore(scoreFile);
         if (!point.getListPoint().isEmpty()) {
@@ -91,9 +88,7 @@ public class BombermanGame extends Application {
         } else {
             highestScore = new Point(0, 0);
         }
-        // Bắt đầu từ level 1
         level = 1;
-        // Vào thẳng game
         playGame(stage);
     }
 
@@ -294,7 +289,7 @@ public class BombermanGame extends Application {
             textTime.setText("Time: " + timeReal);
             textHeart.setText(": " + bomberman.getHeart());
             textLevel.setText("Level: " + this.level);
-            textScore.setText("Score: " + point.getScore());//System.out.println(point.getScore());
+            textScore.setText("Score: " + point.getScore());
             if (bomberman.getHeart() <= 0) {
                 loseGame = true;
             }
@@ -365,16 +360,6 @@ public class BombermanGame extends Application {
                 audio.playAudio(Audio.audio.backgroundMusic.value);
             }
         });
-       /* Menu.getVolumOffButton().setOnMouseClicked(mouseEvent -> {
-            root.getChildren().remove(Menu.getVolumOffButton());
-            root.getChildren().add(Menu.getVolumOnButton());
-            if (cntSound % 2 == 0 && playMusicMenu % 2 == 0) {
-                audio.playAudio(Audio.audio.buttonClick.value);
-            }
-            audio.audioStopTime(Audio.audio.buttonClick.value, 70);
-            playMusicMenu++;
-            audio.playAudio(Audio.audio.backgroundMusic.value);
-        });*/
         Menu.getPlayButton().setOnMouseClicked(mouseEvent -> {
             if (cntSound % 2 == 0 && playMusicMenu % 2 == 0) {
                 audio.playAudio(Audio.audio.buttonClick.value);
