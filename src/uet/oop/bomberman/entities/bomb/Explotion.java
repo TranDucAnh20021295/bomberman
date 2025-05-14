@@ -1,14 +1,7 @@
-package uet.oop.bomberman.entities.Bomb;
-import uet.oop.bomberman.entities.Entity;
+package uet.oop.bomberman.entities.bomb;
 import javafx.scene.canvas.GraphicsContext;
-import javafx.scene.image.Image;
-import uet.oop.bomberman.BombermanGame;
-import uet.oop.bomberman.entities.Bomber;
 import uet.oop.bomberman.entities.Entity;
 import uet.oop.bomberman.graphics.Sprite;
-import uet.oop.bomberman.entities.Bomber;
-
-import java.security.Signature;
 
 /**
  * Đối tượng bom nổ.

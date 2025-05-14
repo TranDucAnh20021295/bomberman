@@ -1,13 +1,12 @@
 package uet.oop.bomberman.entities.Item;
 
-import javafx.scene.image.Image;
-
-import uet.oop.bomberman.BombermanGame;
-import uet.oop.bomberman.entities.Bomb.Bomb;
-import uet.oop.bomberman.entities.Entity;
-import uet.oop.bomberman.graphics.Sprite;
-
 import java.util.Random;
+
+import javafx.scene.image.Image;
+import uet.oop.bomberman.BombermanGame;
+import uet.oop.bomberman.entities.Entity;
+import uet.oop.bomberman.entities.bomb.Bomb;
+import uet.oop.bomberman.graphics.Sprite;
 
 public class Item extends Entity {
     public static final long ITEM_TIME_LIMIT = 5000;

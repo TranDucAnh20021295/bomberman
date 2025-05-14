@@ -1,18 +1,16 @@
 package uet.oop.bomberman.entities;
 
-import javafx.scene.text.Text;
-import uet.oop.bomberman.BombermanGame;
-import uet.oop.bomberman.entities.Interaction.Collision;
-import uet.oop.bomberman.entities.Move.MoveEntity;
-import uet.oop.bomberman.getBomberControl;
-import uet.oop.bomberman.graphics.Sprite;
-import uet.oop.bomberman.entities.Bomb.Bomb;
+import java.util.ArrayList;
+import java.util.List;
 
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.image.Image;
-
-import java.util.ArrayList;
-import java.util.List;
+import uet.oop.bomberman.BombermanGame;
+import uet.oop.bomberman.entities.Interaction.Collision;
+import uet.oop.bomberman.entities.Move.MoveEntity;
+import uet.oop.bomberman.entities.bomb.Bomb;
+import uet.oop.bomberman.getBomberControl;
+import uet.oop.bomberman.graphics.Sprite;
 
 /**
  * Các thuộc tính của Bomber.
